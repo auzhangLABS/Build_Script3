@@ -26,6 +26,7 @@ do
         echo 'Choose your option: '
         #reading option from user. If user select something beside anything in the menu the function will exit
         read option
+        #i could've use case statement for this
         if [[ $option -eq 1 ]]
         then
                 #print current users
