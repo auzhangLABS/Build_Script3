@@ -4,6 +4,8 @@
 option=14
 
 #will stay in the loop if option = 14
+
+#keep in mind: if you select something from menu and you choose to continue please enter a lower case y as upper case will exit menu
 while [[ $option -eq 14 ]]
 do
         #printing out the menu
