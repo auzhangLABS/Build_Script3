@@ -26,17 +26,22 @@ do
         read option
         if [[ $option -eq 1 ]]
         then
+                #print current users
                 whoami
                 echo 'Continue (y/n)'
                 read int
+                #reading input from user if they wish to continue
                 if [[ $int == 'y' ]]
                 then 
+                        #if they do then return menu again
                         option=14
                 else
+                        #if they don't, just exit the function
                         option=13
                 fi
         elif [[ $option -eq 2 ]]
         then
+                #CURRENT shell dir
                 echo $SHELL
                 echo 'Continue (y/n)'
                 read int
@@ -47,7 +52,8 @@ do
                         option=13
                 fi
         elif [[ $option -eq 3 ]]
-        then
+        then        
+                #home dir
                 echo $HOME
                 echo 'Continue (y/n)'
                 read int
@@ -173,5 +179,5 @@ do
                 option=13 
         fi
 done
-
+#once finish or option is invalid then return this
 echo "You are out of the menu"
